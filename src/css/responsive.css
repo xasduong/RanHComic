@@ -1,0 +1,33 @@
+@media only screen and (max-width: 480px) {
+    form .col{
+        display: block;
+    }
+    form input[type="text"] {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    form .infor-comic{
+        padding: 20px;
+    }
+    form .box_website > p{
+        text-align: center;
+    }
+    .website-function{
+        display: flex;
+        margin: 28px auto;
+        justify-content: center;
+        gap: 12px;
+        align-items: center
+    }
+    section {
+        left: -100%;
+    }
+    section .box-comic{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .back_top-comic{
+        width: 260px;
+    }
+}

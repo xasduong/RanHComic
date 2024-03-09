@@ -1,0 +1,256 @@
+*{
+    padding: 0; margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --web: #16163f;
+}
+.col   {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* Navigation chapter--------------------------------------------- */
+nav{
+    background: rgb(77, 75, 75);
+    padding: 12px;
+}
+nav .col{
+    background: white;
+    padding: 20px 16px;
+    border-radius: 12px;
+}
+.nav-head.flexC{
+    gap: 8px;
+    align-items:last baseline;
+    justify-content: flex-start;
+ }
+.nav-head .nav-head_name{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.nav-head .nav-head_chapter{
+    font-size: 24px;
+}
+/* ---------------- */
+.comic-information{
+	margin: 20px auto 12px auto;
+	text-align: center;
+	opacity: 0.8;
+}
+.comic-server_img{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0px 4px 20px;
+}
+.comic-error,
+.comic-server_img > span{
+	margin: 0px 2px;
+	padding: 7px 12px;
+	border-radius: 3px;
+	font-size: 13px;
+	cursor: pointer;
+    border: 1px solid #ddd;
+}
+.comic-server_img > span{
+    background:rgb(53, 76, 207);
+}
+.comic-server_img > span.server_active{
+	background-color: rgb(93, 175, 66);
+	transition: all ease 0.5s;
+}
+.comic-error{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 12px auto 18px auto ;
+	column-gap: 6px;
+	width: 94px;
+	background-color: rgb(225, 184, 4) ;
+	transform: brightness(20%);
+}
+
+/* ---------------- */
+#nav-chapter {
+    display: flex;
+    margin: 20px auto;
+    padding: 6px 12px;
+    width: 280px;
+    position: relative;
+}
+.nav-chapter_current{
+    border: 1px solid #ddd;
+    width: 280px; height: 40px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.nav-chapter_box {
+    width: 600px;
+    padding: 12px;
+    margin: 20px auto;
+    border-radius: 3px;
+    background: rgb(70, 69, 69);
+    transition: 0.3s;
+    
+    position: fixed;
+    top: -38%;
+    opacity: 0;
+    left: 0; right: 0;
+    z-index: 2;
+}
+.chapter_box-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+    align-items: center;
+}
+.chapter_box-head label{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.chapter_box-head input{
+    padding: 5px 15px;
+    font-size: 18px;
+    width: 50%;
+}
+.chapter_box-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px 6px;
+    list-style: none;
+    padding: 12px 8px;
+    max-height: 380px;
+    overflow-y: scroll;
+    background:rgb(66, 65, 65);
+}
+/* .chapter_box-list::-webkit-scroll-thumb{
+    background: red;
+}
+.chapter_box-list::-webkit-scroll{
+    width: 4px;
+    color: red;
+} */
+.chapter_box-list li{
+    border: 1px solid rgb(77, 74, 74);
+    padding: 5px 4px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+.chapter_box-list li a{
+    color: white;
+}
+.chapter_box-list li:hover{
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.chapter_box-btn{
+    border-radius: 3px;
+    padding: 6px 5px;
+    width: 160px;
+    margin: 12px auto;
+    color: white;
+    background: rgb(34, 53, 161);
+}
+/* Navigation chapter--------------------------------------------- */
+/* LInk chapter--------------------------------------------------- */
+    .nav-link{
+        gap: 8px;
+    } 
+    .nav-link_chap{
+        background:rgb(31, 46, 134);
+        color: white;
+        padding: 8px 28px;
+        gap: 12px;
+    }
+    .nav-link_chap:nth-child(1) {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+    .nav-link_chap:last-child {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    .nav-link > div{
+        border: 1px solid #ddd;
+        padding: 12px 18px;
+        border-radius: 5px;
+        background:rgb(168, 165, 165);
+    }
+/* LInk chapter--------------------------------------------------- */
+/* Nav-website---------------------------------------------------- */
+.nav-web{
+    position: fixed;
+    bottom: 0px; right: 0; left: 0;
+    background:rgb(70, 69, 69);
+}
+.nav-web > .col{
+    padding: 6px;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-web .nav-chapter_current{
+    width: 160px;
+    font-size: 18px;
+    color: black;
+    padding: 3px 12px;
+    background-color: white;
+}
+.nav-web i{
+    font-size: 36px;
+    color: white;
+}
+/* Nav-website---------------------------------------------------- */
+/* Content-------------------------------------------------------- */
+content img{
+    display: block;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* Content-------------------------------------------------------- */
+#overlay{
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+/* Thu vien */
+.input{
+    outline: none;
+    border-radius: 16px;
+    border: none;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    display: block;
+    text-decoration: none;
+}
+.flexC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.flexS{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.close{display: none;}
+.open{
+    display: block;
+}
+@keyframes fadeIn {
+
+}

@@ -1,0 +1,19 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background: rgb(33, 43, 87);
+    /* height: 50px; */
+}
+footer{
+    background: rgb(38, 52, 126);
+    height: 50px;
+}
+
+.flc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
