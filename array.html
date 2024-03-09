@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/array.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <title>API- Comic</title>
+</head>
+<body>
+    <nav>
+        <div class="col">
+            <a href="./index.html">Home</a>
+        </div>
+    </nav>
+    <form action="">
+        <div class="col">
+            <div class="form-api_title">Danh sách mảng truyện tranh</div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="form-api_input">
+                <label for="api_input">Thêm mảng</label>
+                <input type="text" id="api_input" placeholder="Thêm danh sách vào đây">
+            </div>
+            <div class="form-api_btn">POST API</div>
+        </div>
+
+    </form>
+    <div class="web-image">
+        <div class="col">
+           <!-- JS -->
+        </div>
+    </div>
+    <section class="close">
+        <div class="section-box">
+            <p>Sửa truyện tranh</p> 
+            <label for="input_name">Tên truyện tranh:</label>
+                <input type="text" id="input_name" placeholder="Tên truyện">
+            <label for="input_lengtImg" class="length-img">Số lượng ảnh:
+                <input type="number" id="input_lengthImg" min="0" placeholder="Số lượng ảnh">
+            </label>
+            <label for="input_url">Danh sách đường dẫn ảnh:</label>
+                <input type="text" id="input_url" placeholder="Đường dẫn ảnh">
+            <div class="section-box_btn">Cập nhật</div>
+            <div class="section-box_close">Đóng</div>
+            <div class="section-box_remove">Xóa truyện</div>
+        </div>
+    </section>
+    <div id="web-plus_btn">Extra</div>
+    <div id="over-lay" class="close"></div>
+    <script src="src/js/array.js"></script>
+</body> 
+</html>

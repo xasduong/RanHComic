@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/post.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <title>Post Images</title>
+</head>
+<body>
+    <form action="">
+        <div class="form-down"></div>
+        <div class="form-down"></div>
+        <div class="col">
+            <div>
+                <p class="web-head">Thêm đường link ảnh vào đây</p>
+                <input type="text" class="web-form_link" placeholder="Đặt link ảnh vào đây!">
+                <div class="infor-comic">
+                    <p>Xem trước truyện: <span class="name-comic">Truyện tranh</span></p>
+                    <p>Số ảnh: <span class="num-length">0</span> _ảnh</p>
+                </div>
+                <div class="box_server">
+                    <p>Server ảnh: </p>
+                    <span value="Postimage">1</span>
+                    <span value="Mycomputer">2</span>
+                </div>
+            </div>
+            <div class="box_website">
+                <p>Các Website đường dẫn ảnh</p>
+                <div class="website-btn">
+                </div>
+                <div class="website-function close">
+                    <label for="num_img">Nhập số ảnh</label>
+                    <input type="number" min="0" name="" id="num_img" placeholder="Nhập số ảnh">
+                </div>
+                <input type="button" value="POST API">
+            </div>
+            
+        </div>
+
+    </form>
+    <content>
+        <div class="col">
+            <div class="box-demo">
+                <!-- JS -->
+            </div>
+        </div>
+        <div class="box-random">
+            <div class="col">
+                Truyện ngẫu nhiên: <span class="box-random_title"></span>
+                <!-- JS -->
+            </div>
+        </div>
+    </content>
+    <div class="box-back_top">
+        <a href="#" id="back-top">Top</a>
+        <div class="back_top-comic">
+            <a href="">Truyện tranh </a>
+            <div class="back_top-arrow"></div>
+        </div>
+        <div class="back_top-infor">1</div>
+    </div>
+    <footer>
+        <div class="col">
+            <p>Thông tin bản quyền thuộc về Xasduong</p>
+        </div>
+    </footer>
+    <section>
+        <div class="section-title">
+            <p>Danh sách truyện tranh</p>
+            <div class="section-title_nav">
+                <a href="./array.html">Mảng API</a>
+            </div>
+        </div>
+        <div class="box-comic"></div>
+        <div class="box-comic_nav"></div>
+        <div class="box-comic_infor">
+            Có tất cả <div>0</div>truyện
+        </div>
+        <span>Đóng</span>
+    </section>   
+    <div id="over-lay" class="close"></div>
+    <script src="src/js/post.js"></script>
+</body>
+</html>
