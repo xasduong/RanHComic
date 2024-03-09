@@ -21,9 +21,7 @@ const api = {
         },
     ]
 };
-let myImage = JSON.parse(localStorage.getItem('myImage')).sort((a, b) => {
-    return b.lengthImg - a.lengthImg;
-});
+let myImage = JSON.parse(localStorage.getItem('myImage'));
 (function startWeb() {
     if(myImage == null) {
         let isChoose = confirm("Trang Web sẽ lấy giá trị khi bạn nhập dữ liệu! Yes or No");
